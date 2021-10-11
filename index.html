@@ -4,28 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FCC Survey Form</title>
 </head>
 <body>
-    <h1 id="title">Title</h1>
-    <p id="description"></p>
+    <h1 id="title">freeCodeCamp</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form" action="">
-        <label id="name-label">Name</label>
-        <input id="name" placeholder="John Doe">
-        <!--Make sure to enter email validation-->
-        <label id="email-label">Email</label>
-        <input placeholder="random@user.com" id="email">
-        <!--Make sure to validate user input for the phone number-->
-        <label id="number-label">Phone Number</label>
-        <input id="number" placeholder="1234567899">
+        <label id="name-label">Name</label> <br>
+        <input id="name" placeholder="John Doe"> <br>
 
+        <!--Make sure to enter email validation-->
+        <label id="email-label">Email</label> <br>
+        <input placeholder="random@user.com" id="email"> <br>
+
+        <label id="age-label">Age(optional)</label> <br>
+        <input id="age" placeholder="21"> <br>
+
+        <!--Make sure to validate user input for the phone number-->
+        <label id="number-label">Phone Number</label> <br>
+        <input id="number" placeholder="1234567899"> <br>
+
+        <!-- dropdoown menu -->
+        <h3>Which option best describes your current role?</h3>
         <select id="dropdown">
-            <option >Option</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+             <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
         </select>
 
-        <input id="option" type="radio" name="radio_buttons" value="option1">
-          <label for="option">option 1</label><br>
+        <br>
+        <h3>Would you recommend freeCodeCamp to a friend?</h3>
+        <input id="definitely" type="radio" name="radio_buttons" value="definitely">
+          <label for="definitely">Definitely</label><br>
+        <input id="maybe" type="radio" name="radio_buttons" value="maybe">
+          <label for="maybe">Maybe</label><br>
+        <input id="not_sure" type="radio" name="radio_buttons" value="not_sure">
+          <label for="not_sure">Not Sure</label><br>
 
+        <h3>What would you like to see improved? (Check all that apply)</h3>
+        <input type="checkbox" id="checkbox-1" name="front-end-projects" value="front-end-projects">
+        <label for="checkbox-1">Front-End-Projects</label><br>
+
+        <input type="checkbox" id="checkbox-2" name="back-end-projects" value="back-end-projects">
+        <label for="checkbox-2">Back-End-Projects</label><br>
+
+        <input type="checkbox" id="checkbox-1" name="front-end-projects" value="front-end-projects">
+        <label for="checkbox-1">Front-End-Projects</label><br>
+
+        <input type="checkbox" id="checkbox-3" name="data-vizualization" value="data-vizualization">
+        <label for="checkbox-3">Data Visualization</label><br>
+
+        <input type="checkbox" id="checkbox-4" name="challenges" value="challenges">
+        <label for="checkbox-4">Challenges</label><br>
+
+        <input type="checkbox" id="checkbox-5" name="open-source-community" value="open-source-community">
+        <label for="checkbox-5">Open Source Community</label><br>
+
+        <input type="checkbox" id="checkbox-6" name="gitter-help-rooms" value="gitter-help-rooms">
+        <label for="checkbox-6">Gitter Help Rooms</label><br>
+
+        <input type="checkbox" id="checkbox-7" name="videos" value="videos">
+        <label for="checkbox-7">Videos</label><br>
+        <br>
+        <label for="additional-comments">Any additional comments or suggestions?</label> <br>
+        <textarea name="additional-comments" id="additional-comments" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Submit">
     </form>
     
 </body>
