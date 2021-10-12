@@ -12,18 +12,47 @@
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form" action="">
         <label id="name-label">Name</label> <br>
-        <input id="name" placeholder="John Doe"> <br>
+        <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            placeholder="John Doe" 
+            required> 
+            
+            <br>
 
         <!--Make sure to enter email validation-->
-        <label id="email-label" type="email">Email</label> <br>
-        <input placeholder="random@user.com" id="email"> <br>
+        <label id="email-label" >Email</label> <br>
+        <input 
+            type="email"
+            id="email" 
+            placeholder="random@user.com"
+            name="email" 
+            required> 
+            
+            <br>
 
-        <label id="age-label" type="number" min="1" max="140">Age(optional)</label> <br>
-        <input id="age" placeholder="21"> <br>
+        <label id="age-label" >Age(optional)</label> <br>
+        <input 
+            type="number" 
+            id="age" 
+            placeholder="21" 
+            name="age"
+            min="1" 
+            max="140" 
+            required> 
+            <br>
 
         <!--Make sure to validate user input for the phone number-->
-        <label id="number-label" type="number" min="0" max="9999999999">Phone Number</label> <br>
-        <input id="number" placeholder="1234567899"> <br>
+        <label id="number-label" >Phone Number</label> <br>
+        <input 
+            id="number" 
+            type="number" 
+            min="0" 
+            max="9999999999" 
+            name="number" 
+            placeholder="1234567899" 
+            required> <br>
 
         <!-- dropdoown menu -->
         <h3>Which option best describes your current role?</h3>
@@ -72,7 +101,7 @@
         <label for="additional-comments">Any additional comments or suggestions?</label> <br>
         <textarea name="additional-comments" id="additional-comments" cols="30" rows="10"></textarea>
         <br>
-        <input type="submit" value="Submit">
+        <button type="submit" id="submit" value="submit">Submit</button>
     </form>
     
 </body>
