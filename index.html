@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FCC Survey Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 id="title">freeCodeCamp</h1>
@@ -14,14 +15,14 @@
         <input id="name" placeholder="John Doe"> <br>
 
         <!--Make sure to enter email validation-->
-        <label id="email-label">Email</label> <br>
+        <label id="email-label" type="email">Email</label> <br>
         <input placeholder="random@user.com" id="email"> <br>
 
-        <label id="age-label">Age(optional)</label> <br>
+        <label id="age-label" type="number" min="1" max="140">Age(optional)</label> <br>
         <input id="age" placeholder="21"> <br>
 
         <!--Make sure to validate user input for the phone number-->
-        <label id="number-label">Phone Number</label> <br>
+        <label id="number-label" type="number" min="0" max="9999999999">Phone Number</label> <br>
         <input id="number" placeholder="1234567899"> <br>
 
         <!-- dropdoown menu -->
